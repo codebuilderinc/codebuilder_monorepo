@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "42366c52f00f29982a63eaa5b695b59d",
+    "content-hash": "d0c7876d2a440a89dc884754f62dda35",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -121,6 +121,61 @@
                 }
             ],
             "time": "2021-08-15T20:50:18+00:00"
+        },
+        {
+            "name": "coliving/laravel-reddit-api",
+            "version": "0.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dungnh/laravel-reddit-api.git",
+                "reference": "fe981e0e1dfaaf3145be806069a72bb2e7d44d98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dungnh/laravel-reddit-api/zipball/fe981e0e1dfaaf3145be806069a72bb2e7d44d98",
+                "reference": "fe981e0e1dfaaf3145be806069a72bb2e7d44d98",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "illuminate/support": "^5.1|^6.0|^7.0|^8.0|^9.0",
+                "php": "^7.4|^8.0|^8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "9.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CodeWizz\\RedditAPI\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dzung Nguyen",
+                    "email": "dungnh@gmail.com",
+                    "homepage": "https://coliving.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel Reddit API wrapper",
+            "homepage": "https://github.com/dungnh/laravel-reddit-api",
+            "keywords": [
+                "api",
+                "codewizz",
+                "coliving",
+                "laravel",
+                "laravel-reddit-api",
+                "reddit"
+            ],
+            "support": {
+                "source": "https://github.com/dungnh/laravel-reddit-api/tree/0.1.8"
+            },
+            "time": "2022-04-04T08:12:22+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
