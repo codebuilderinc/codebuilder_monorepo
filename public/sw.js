@@ -38,8 +38,10 @@
     notificationClick (event) {
       // console.log(event.notification)
 
-      if (event.action === 'some_action') {
-        // Do something...
+      if (event.action === 'view_app') {
+        self.clients.openWindow('/job/1')
+        alert('test')
+        console.log(event)
       } else {
         self.clients.openWindow('/')
       }

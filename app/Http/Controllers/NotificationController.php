@@ -54,7 +54,11 @@ class NotificationController extends Controller
      */
     public function store(Request $request)
     {
-        $request->user()->notify(new HelloNotification);
+        $request->user()->notify(new HelloNotification( (object) [
+            'title' => 'foo',
+            'body' => 'lorep ipsum lorep ipsum',
+            'url' => 'https://codebuilder.us'
+          ]));
 
         return response()->json('Notification sent.', 201);
     }

@@ -18,9 +18,9 @@ class HelloNotification extends Notification
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
-        //
+        $this->data = $data;
     }
 
     /**
@@ -43,9 +43,9 @@ class HelloNotification extends Notification
     public function toArray($notifiable)
     {
         return [
-            'title' => 'Hello from Laravel!',
-            'body' => 'Thank you for using our application.',
-            'action_url' => 'https://laravel.com',
+            'title' => $this->data->title,
+            'body' => $this->data->body,
+            'action_url' => $this->data->url,
             'created' => Carbon::now()->toIso8601String(),
         ];
     }
@@ -60,9 +60,9 @@ class HelloNotification extends Notification
     public function toWebPush($notifiable, $notification)
     {
         return (new WebPushMessage)
-            ->title('Hello from Laravel!')
-            ->icon('/notification-icon.png')
-            ->body('Thank you for using our application.')
+            ->title($this->data->title)
+            ->icon('/images/mandala4_75.png')
+            ->body($this->data->body)
             ->action('View app', 'view_app')
             ->data(['id' => $notification->id]);
     }

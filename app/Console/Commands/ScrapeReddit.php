@@ -14,7 +14,7 @@ use App\Models\User;
 use App\Notifications\HelloNotification;
 
 
-class tcpBot extends Command
+class ScrapeReddit extends Command
 {
   /**
    * The name and signature of the console command.
@@ -85,7 +85,11 @@ class tcpBot extends Command
       $job->subreddit = $link->subreddit;
       $job->save();
 
-      User::find(1)->notify(new HelloNotification);
+      User::find(1)->notify(new HelloNotification( (object) [
+        'title' => $title,
+        'body' => $body,
+        'url' => 'https://codebuilder.us'
+      ]));
 
       /* Send out notifications for web browser / android 
      Notification::send(User::all(), new PushJobs([

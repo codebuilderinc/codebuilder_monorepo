@@ -14,7 +14,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         Commands\runIRCBot::class,
-        Commands\tcpBot::class,
+        Commands\ScrapeReddit::class,
         Commands\checkRedditMsg::class
     ];
 
