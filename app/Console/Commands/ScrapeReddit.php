@@ -87,7 +87,7 @@ class ScrapeReddit extends Command
 
       User::find(1)->notify(new HelloNotification( (object) [
         'title' => $title,
-        'body' => $body,
+        'body' => $plain_body,
         'url' => 'https://codebuilder.us'
       ]));
 
