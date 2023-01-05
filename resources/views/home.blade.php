@@ -3,7 +3,6 @@
 @section('content')
     <button id="enable-push">Enable push notifications</button>
     <button id="disable-push">Disable push notifications</button>
-    <script src="/main.js"></script>
 
     <div class="container" style="padding-bottom: 75px;">
 
@@ -102,6 +101,7 @@
                 </div>
             @endif
         </div>
+        <script src="/main.js" defer></script>
 
 
     </div>
