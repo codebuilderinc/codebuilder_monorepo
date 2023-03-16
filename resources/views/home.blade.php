@@ -1,9 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    <button id="enable-push">Enable push notifications</button>
-    <button id="disable-push">Disable push notifications</button>
-
     <div class="container" style="padding-bottom: 75px;">
 
         <div class="row">
@@ -21,7 +18,6 @@
                     href="/jobs/rejected" class="btn"><i class="fas fa-trash"></i> Rejected </a>
             </div>
         </div>
-        <button onclick="initSW();" class="bt btn-primary">Subscribe to Notifications</button>
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
