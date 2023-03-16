@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'CodeBuilder, Inc.') }}</title>
+    <title>@yield('title')</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/images/mandala4_75.png">
