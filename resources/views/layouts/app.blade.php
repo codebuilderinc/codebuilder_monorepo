@@ -8,7 +8,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'CodeBuilder, Inc.') }}</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/images/mandala4_75.png">
 
     <!-- GCM Manifest (optional if VAPID is used) -->
     @if (config('webpush.gcm.sender_id'))
