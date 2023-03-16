@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Jobs - CodeBuilder, Inc.')
 
 @section('content')
     <div class="container" style="padding-bottom: 75px;">
